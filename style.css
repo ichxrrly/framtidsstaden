@@ -1,0 +1,708 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; 
+}
+
+
+
+a:visited {
+    text-decoration: none;
+    color: rgb(104, 87, 90);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.background2 {
+    width: 100%;
+    height: 100%;
+    filter: blur(7px);
+    -webkit-filter: blur(7px);
+}
+
+.pic1, .pic2, .pic3 {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.line {
+    position: absolute;
+    color: white;
+    bottom: 40vh;
+    z-index: 15;
+    width: 28%;
+    margin-left: 35vw;
+}
+
+
+/*arrow down*/
+.arrow {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 47vw;
+    bottom: 20vh;
+    transition: 1s;
+
+  }
+
+  .arrow:hover {
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    margin-top: 15vh;
+    border-color: white;
+  }
+  
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  
+
+
+
+
+
+
+
+
+/*transition*/
+
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section2 {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  
+  .section2.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .section2 {
+    top: auto;
+    min-height: 100vh;
+    /* display: flex;
+    justify-content: baseline; */
+    align-items: center;
+  }
+
+
+
+
+
+/*hamburger menu*/
+/* Hide the menu by default */
+
+.menu-toggle {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    overflow: hidden;
+  }
+  
+  .menu-toggle .icon {
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff;
+    position: relative;
+    transition: all 0.3s ease;
+    display: block;
+  }
+  
+  .menu-toggle .icon::before,
+  .menu-toggle .icon::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-toggle .icon::before {
+    transform: translateY(-6px);
+  }
+  
+  .menu-toggle .icon::after {
+    transform: translateY(6px);
+  }
+  
+  .menu-toggle.active .icon {
+    transform: rotate(45deg);
+  }
+  
+  .menu-toggle.active .icon::before {
+    transform: rotate(90deg) translate(6px, -6px);
+  }
+  
+  .menu-toggle.active .icon::after {
+    transform: rotate(-90deg) translate(6px, 6px);
+  }
+  
+  .menu-toggle.active {
+    background-color: black;
+  }
+  
+  #links {
+      display: none;
+      background-color: white;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 10px;
+  }
+  
+  .menu a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+
+
+
+.headtitle {
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+
+
+
+.title {
+    color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 10;
+    font-style: italic;
+    font-size: 90px;
+}
+
+.secondtitle {
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 10;
+}
+
+.section1 {
+    background-color: black;
+    height: 13vh;
+    position: sticky;
+    top: 0;
+    z-index: 16;
+    width: 100%;
+}
+
+
+nav {
+    width: 25vw;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+.nackaskog {
+    width: 100vw;
+    margin-top: 30vh;
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+}
+
+.nackadjur {
+    position: relative;
+    z-index: 7;
+    border: 3px solid #000000;
+}
+
+.djurtext {
+    color: white;
+    position: relative;
+    z-index: 7;
+}
+
+
+.placeholder1 {
+    width: 30%;
+    margin-left: 12vw;
+    bottom: 50vh;
+    position: relative;
+    float: left;
+}
+
+.placeholder2 {
+    width: 30%;
+    margin-right: 10vw;
+    bottom: 50vh;
+    position: relative;
+    float: right;
+}
+
+.omoss1 {
+    color: white;
+    width: 30vw;
+    float: left;
+    position: relative;
+    margin-left: 12vw;
+    bottom: 30vh;
+}
+
+.omoss2 {
+    color: white;
+    width: 30vw;
+    float: right;
+    position: relative;
+    margin-right: 10vw;
+    bottom: 30vh;
+}
+
+.omoss,
+.phs {
+    background-color: black;
+    height: 50vh;
+    bottom: 40vh;
+}
+
+footer {
+    background-color: #A66A6A;
+    width: 100vw;
+    top: 0;
+}
+
+.footer {
+    padding: 50px;
+    margin-top: 40vh;
+}
+
+
+
+
+
+
+/*mobile*/
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+
+    .section2 {
+        top: 8vh;
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "pic1"
+            "pic2"
+            "pic3";
+
+    }
+
+    .flexcontainer {
+        display: none;
+    }
+
+    .headtitle {
+
+        color: white;
+        left: 27%;
+        font-size: 6vw;
+        top: 5vh;
+
+    }
+
+    .background2 {
+        width: 100%;
+        height: 110%;
+    }
+
+    .title {
+        bottom: 20vh;
+        left: 7%;
+        font-style: italic;
+        font-size: 170%;
+    }
+
+    .secondtitle {
+        bottom: 17vh;
+        left: 25%;
+        position: relative;
+        font-size: 120%;
+        font-style: italic;
+    }
+
+    .info {
+        font-size: 119%;
+        width: 90%;
+        bottom: 240vh;
+        position: relative;
+        margin-left: 3vw;
+    }
+
+    .pic1 {
+        grid-area: pic1;
+        margin-top: 40vh;
+        width: 120%;
+        margin-left: 8vw;
+
+    }
+
+    .pic2 {
+        grid-area: pic2;
+        margin-top: 10vh;
+        width: 120%;
+        margin-left: 8vw;
+
+    }
+
+    .pic3 {
+        grid-area: pic3;
+        bottom: 20%;
+        width: 120%;
+        margin-left: 8vw;
+    }
+
+
+
+    .nackaskog {
+        display: none;
+    }
+
+    .dots {
+        display: none;
+    }
+
+
+    .djurtext {
+        top: 40vh;
+        font-size: 95%;
+        color: rgb(255, 255, 255);
+    }
+
+
+    .omoss {
+        display: none;
+
+    }
+
+    .nackadjur {
+        bottom: 40vh;
+    }
+
+
+}
+
+
+
+
+
+
+/*tablet*/
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+    .section2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "pic1 . pic3"
+            ". pic2 .";
+    }
+
+    .headtitle {
+        top: 40%;
+        color: white;
+        margin-left: 25vw;
+        font-size: 5vw;
+
+    }
+
+    .title {
+        color: rgb(0, 0, 0);
+        position: relative;
+        z-index: 10;
+        bottom: 23vh;
+        left: 5%;
+        font-style: italic;
+        font-size: 35px;
+    }
+
+    .secondtitle {
+        position: relative;
+        bottom: 22vh;
+        left: 29%;
+        font-style: italic;
+        font-size: 20px;
+        width: 40%;
+    }
+
+    .flexcontainer {
+        display: none;
+    }
+
+    .background2 {
+        width: 100%;
+        height: 40vh;
+    }
+
+
+    .pic1 {
+        width: 120%;
+        grid-area: pic1;
+        margin-left: 4vw;
+
+    }
+
+    .pic2 {
+        width: 120%;
+        right: 10%;
+        position: relative;
+        grid-area: pic2;
+    }
+
+    .pic3 {
+        width: 120%;
+        margin-left: 22vw;
+        /* grid-area: pic3; */
+    }
+
+    .info {
+        width: 70%;
+        margin-left: 17vw;
+        bottom: 10vh;
+        padding-top: 6vh;
+    }
+
+    .dotdesign {
+        rotate: 85deg;
+        float: left;
+        bottom: 45vh;
+        position: relative;
+        right: 25%;
+    }
+
+    .dotdesign2 {
+        rotate: -80deg;
+        float: right;
+        bottom: 45vh;
+        position: relative;
+        left: 28%;
+    }
+
+    .nackaskog {
+        height: 80vh;
+        width: 100%;
+    }
+
+    .nackadjur {
+        width: 65%;
+        margin-left: 17vw;
+        bottom: 74vh;
+    }
+
+    .djurtext {
+        bottom: 70vh;
+        width: 75vw;
+        margin-left: 12vw;
+        font-size: 100%;
+    }
+
+    .phs {
+        padding-top: 25vh;
+    }
+
+}
+
+
+
+/*desktop*/
+@media only screen and (min-width: 769px) {
+
+    body {
+        width: 100vw;
+    }
+
+    .background2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section1 {
+        display: grid;
+        left: 40%;
+        grid-template-columns: 80px 60px repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "ht . info ex om";
+    }
+
+    .headtitle {
+        color: white;
+        float: left;
+        margin-left: 4vw;
+        position: relative;
+        font-size: 3vw;
+        top: 20%;
+        grid-area: ht;
+
+    }
+
+    .flexcontainer {
+        margin-top: 5vh;
+        margin-left: 25vw;
+    }
+
+    .title {
+        color: rgb(0, 0, 0);
+        position: absolute;
+        z-index: 10;
+        top: 43vh;
+        left: 5%;
+        font-style: italic;
+        font-size: 90px;
+    }
+
+    .secondtitle {
+        z-index: 10;
+        position: absolute;
+        top: 65vh;
+        left: 40%;
+        font-style: italic;
+        font-size: 25px;
+        width: 20%;
+    }
+
+    li {
+        position: relative;
+        width: 8vw;
+        height: 3vh;
+        bottom: 7vh;
+        display: inline-block;
+        text-align: center;
+
+    }
+
+    .b1 {
+        grid-area: info;
+    }
+
+    .b2 {
+        grid-area: ex;
+    }
+
+    .b3 {
+        grid-area: om;
+    }
+
+    .section2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "pic1 pic2 pic3";
+    }
+
+    .pic1 {
+        width: 90%;
+        grid-area: pic1;
+        margin-top: 20vh;
+
+    }
+
+    .pic2 {
+        width: 90%;
+        grid-area: pic2;
+        margin-top: 3vh;
+
+
+    }
+
+    .pic3 {
+        width: 90%;
+        grid-area: pic3;
+        margin-top: 20vh;
+
+    }
+
+    .info {
+        font-size: 150%;
+        width: 50vw;
+        margin-top: 20vh;
+        margin-left: 8vw;
+        position: relative;
+    }
+
+    .dotdesign {
+        width: 38%;
+        rotate: -90deg;
+        margin-left: 63vw;
+        bottom: 40vh;
+        position: relative;
+    }
+
+    .dotdesign2 {
+        width: 38%;
+        rotate: -75deg;
+        margin-left: 55vw;
+        bottom: 90vh;
+        position: relative;
+    }
+
+    .nackaskog {
+        height: 130vh;
+    }
+
+    .nackadjur {
+        margin-left: 45vw;
+        bottom: 100vh;
+        width: 50%;
+    }
+
+    .djurtext {
+        font-size: 150%;
+        bottom: 160vh;
+        width: 40vw;
+        margin-left: 5vw;
+    }
+
+    .topnav,
+    .navbar,
+    .menu-toggle {
+        display: none;
+    }
+
+}
